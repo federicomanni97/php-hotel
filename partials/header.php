@@ -16,6 +16,7 @@
         <h1>Hotels</h1>
         <form action="index.php" class="d-flex" method="GET">
             <select name="available" class="p-2" aria-label="Search">
+                <option value="all">All</option>
                 <option value="available">Available</option>
                 <option value="notavailable">Not Available</option>
             </select>
