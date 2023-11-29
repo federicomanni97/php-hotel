@@ -2,7 +2,11 @@
 include __DIR__ . '/partials/header.php';
 if (isset($_GET['available'])) {
     $available = $_GET['available'];
-    $hotels = array_filter($hotels, fn($item) => $available === 'all' || $item['parking'] == (bool)'available');
+    $hotels = array_filter($hotels, fn($item) => $available === 'all' || $item['parking'] == (bool)$available);
+}
+if (isset($_GET['hotelVote'])) {
+    $hotelVote = $_GET['hotelVote'];
+    $hotels = array_filter($hotels, fn($item) => $hotelVote === 'all' || $item['vote'] == (integer)$hotelVote);
 }
 ?>
 

@@ -1,5 +1,5 @@
     <footer>
-        Footer
+        footer
     </footer>
 </body>
 <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>

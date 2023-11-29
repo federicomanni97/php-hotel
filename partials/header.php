@@ -17,8 +17,16 @@
         <form action="index.php" class="d-flex" method="GET">
             <select name="available" class="p-2" aria-label="Search">
                 <option value="all">All</option>
-                <option value="available">Available</option>
-                <option value="notavailable">Not Available</option>
+                <option value="1">Available</option>
+                <option value="0">Not Available</option>
+            </select>
+            <select name="hotelVote" class="p-2" aria-label="Search">
+                <option value="all">All</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
             </select>
             <button class="btn btn-primary">Search</button>
         </form>
