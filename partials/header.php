@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
+    <header class="">
         <h1>Hotels</h1>
+        <form action="index.php" class="d-flex" method="GET">
+            <select name="available" class="p-2" aria-label="Search">
+                <option value="available">Available</option>
+                <option value="notavailable">Not Available</option>
+            </select>
+            <button class="btn btn-primary">Search</button>
+        </form>
     </header>
